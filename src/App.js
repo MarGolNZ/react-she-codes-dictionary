@@ -6,7 +6,7 @@ function App() {
       <header className="App-header">
         <div className="container">
        <h1>Dictionary</h1>
-       <a href="#" className="btn btn-primary">Search</a>
+       <button type="submit" className="btn btn-primary">Search</button>
        </div>
       </header>
     </div>
