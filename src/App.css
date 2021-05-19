@@ -1,6 +1,17 @@
 .App-header {
   margin: 30px auto;
+  color: #bbbfca;
 }
 h1 {
   text-align: center;
+}
+
+.Container {
+  color: #495464;
+}
+
+main,
+header,
+footer {
+  color: #495464;
 }
