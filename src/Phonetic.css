@@ -1,0 +1,17 @@
+a {
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 150ms ease-in-out;
+  margin-right: 15px;
+  height: 60px;
+  color: rgb(112, 110, 110);
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+.Phonetic {
+  height: 30px;
+}

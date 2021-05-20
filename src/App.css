@@ -2,7 +2,7 @@
   margin: 30px auto;
   color: #fdfdfd;
   max-width: 500px;
-  color: #495464;
+  color: #101216;
 }
 h1 {
   text-align: center;
@@ -10,4 +10,8 @@ h1 {
 
 .Container {
   color: #495464;
+}
+footer {
+  font-family: monospace;
+  font-size: 12px;
 }
