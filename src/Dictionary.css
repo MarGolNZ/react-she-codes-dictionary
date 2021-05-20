@@ -8,3 +8,7 @@ section {
   font-size: 12px;
   margin: 5px;
 }
+
+.input {
+  background: rgb(237, 243, 159);
+}
