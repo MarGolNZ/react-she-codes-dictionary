@@ -1,17 +1,13 @@
-.App-header {
+.App {
   margin: 30px auto;
   color: #bbbfca;
+  max-width: 500px;
+  color: #495464;
 }
 h1 {
   text-align: center;
 }
 
 .Container {
-  color: #495464;
-}
-
-main,
-header,
-footer {
   color: #495464;
 }
