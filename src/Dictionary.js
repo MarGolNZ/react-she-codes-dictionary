@@ -3,6 +3,7 @@ import "./Dictionary.css";
 import axios from 'axios';
 import Results from "./Results";
 import Photos from "./Photos"
+require('dotenv').config()
 
 export default function Dictionary(props) {
     let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -12,14 +13,9 @@ export default function Dictionary(props) {
    
     function search() {
         // documentation: https://dictionaryapi.dev/
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-        axios.get(apiUrl).then(handleDictionaryResponse);
-
-        // const unsplashApiKey = "idRS3EiZNJfm69vJLuh9Ll9v7_UJlkhs5ofYU-oMZV8"
-
-
-
-        const pexelsApikey = '563492ad6f9170000100000102e33bc6aa5d4e7c9cebc84d89a92ca8';
+        let apiUrlDictionary = process.env.REACT_APP_API_KEY_DICTIONARY;
+        axios.get(apiUrlDictionary).then(handleDictionaryResponse);
+        const pexelsApikey = process.env.REACT_APP_API_KEY_PEXELS;
         const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
         let headers = { headers: {Authorization: `Bearer ${pexelsApikey}` } };
         axios.get(pexelsApiUrl, headers).then(handlePexelsResponse);
