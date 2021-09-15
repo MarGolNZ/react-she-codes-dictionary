@@ -9,7 +9,7 @@ function App() {
         <h1>Dictionary</h1>
       </header> 
       <main>
-        <Dictionary defaultKeyword="sunset"/>
+        <Dictionary defaultKeyword="hello"/>
       </main>
       <footer className='text-center'><small>This app has been coded by Marina Golovina and is <a href="https://github.com/MarGolNZ/react-she-codes-dictionary" target="_blank" rel="noreferrer"> open-sourced</a></small></footer>
        

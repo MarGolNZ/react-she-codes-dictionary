@@ -13,7 +13,7 @@ export default function Dictionary(props) {
    
     function search() {
         // documentation: https://dictionaryapi.dev/
-        let apiUrlDictionary = process.env.REACT_APP_API_KEY_DICTIONARY;
+        let apiUrlDictionary = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
         axios.get(apiUrlDictionary).then(handleDictionaryResponse);
         const pexelsApikey = process.env.REACT_APP_API_KEY_PEXELS;
         const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
